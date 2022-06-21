@@ -1,5 +1,5 @@
 // 멤버변수를 초기화하는 생성자
-// 초기화목록
+// 생성자 초기화목록
 // 생성자 위임
 
 #include <iostream>
@@ -13,7 +13,7 @@ private:
     double image;
 
 public:
-    Complex() : test("0"), real(0), image(0) {} //우측부터 매개변수 디폴트 값 지정
+    Complex() : test("0"), real(0), image(0) {} //우측부터 매개변수 디폴트 값 지정 //초기화목록: 생성자에만 사용
     Complex(string test) : test(test) {} 
     Complex(double real) : Complex() {} // 생성자 위임
     Complex(double real, double image) : Complex(real) {
